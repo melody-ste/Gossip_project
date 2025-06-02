@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+    
+  </head>
+  <body style="background-color: #e3d6dd; color: #581845; margin: 50px; font-family:  sans-serif;">
+
+    <h1 style="text-align: center; color: #2e1225; margin: 30px; font-size: 60px">Gossip Center</h1>
+
+    <h2 style="text-align: center; margin: 50px;">Bienvenue sur the Gossip Project !<h2>
+
+    
+    <a href="/gossips/new/" style="text-decoration: none; color: #007069; font-size: 20px">Crée un nouveau potin 🍵</a>
+
+
+    <% gossips.each_with_index do |gossip,index| %>
+    <p >
+      <a href="/gossips/<%= index + 1 %>/" style="text-decoration: none; color: #743e61; font-size: 18px">
+      <%= gossip.author %></strong><br/>
+      <%= gossip.content %>
+      </a>
+    </p>
+    <% end %>
+
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+
+<html>
+  <head>
+    <title>Modification du potin n°<%= @id %></title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body style="background-color: #e3d6dd; color: #581845; margin: 20px; font-family:  sans-serif">
+
+    <h1>Modification du potin n°<%= @id %></h1>
+
+    <form action="/gossips/<%= @id %>/edit/" method="POST">
+      <strong> Saisi ici ton nom : </strong> <input type="text" name="author" value="<%= @gossip.author %>"/><br>
+      <strong> modifie ton potin : </strong> <input type="text" name="content" value="<%= @gossip.content %>"/><br>
+      <input type="submit" value="Update">
+    </form>
+
+    <a href="/" style="text-decoration: none; color: #007069; font-size: 14px">Revenir à la page des potins</a>
+
+  </body>
+</html>
