@@ -1,6 +1,6 @@
-#The Gossip Project
+# The Gossip Project
 
-##Description
+## Description
 
 This is a Sinatra web application for our **Gossip Project**.
 
@@ -12,7 +12,7 @@ Inside this repository, you'll find:
   - A `controller.rb` file that manages routes and user interaction,
 - A `config.ru` file to launch the app with Rack.
 
-##How to run 
+## How to run 
 
 To start the application:
 
